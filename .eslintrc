@@ -1,0 +1,20 @@
+{
+  "plugins": ["react", "prettier"],
+  "extends": [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  }
+}
