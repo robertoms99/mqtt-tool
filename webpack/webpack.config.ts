@@ -1,5 +1,5 @@
 import { Configuration } from 'webpack'
-import wmerge from 'webpack-merge'
+import { merge } from 'webpack-merge'
 import devConfig from './webpack.dev'
 import prodConfig from './webpack.prod'
 import path from 'path'
@@ -15,7 +15,6 @@ const commonConfig: Configuration = {
     }),
     new MiniCSSExtractPlugin()
   ],
-  devtool: 'source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js'
@@ -36,13 +35,11 @@ const commonConfig: Configuration = {
 }
 
 export default (_: any, { mode }: any) => {
-  console.log(mode)
-
   switch (mode) {
     case 'development':
-      return wmerge(commonConfig, devConfig as any)
+      return merge(commonConfig, devConfig as any)
     case 'production':
-      return wmerge(commonConfig, prodConfig)
+      return merge(commonConfig, prodConfig)
     default:
       throw new Error('No matching configuration was found!')
   }

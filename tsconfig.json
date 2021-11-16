@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
+      "@webpack/*": ["./webpack/*"],
       "@ui/*": ["app/infrastructure/ui/*"]
     },
     "target": "es5", // Specify ECMAScript target version
@@ -26,7 +27,8 @@
     "noFallthroughCasesInSwitch": true // Report errors for fallthrough cases in switch statement
   },
   "include": [
-    "src/**/*" // *** The files TypeScript should type check ***
+    "src/**/*", // *** The files TypeScript should type check ***
+    "webpack/**/*"
   ],
   "exclude": ["node_modules", "build", "dist"] // *** The files to not type check ***
 }
