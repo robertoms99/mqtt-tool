@@ -16,20 +16,16 @@ const commonConfig: Configuration = {
     new MiniCSSExtractPlugin()
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.[contenthash].js'
+    path: path.resolve(__dirname, '../dist'),
+    filename: 'js/bundle.[contenthash].js'
   },
   resolve: {
     extensions: ['.ts', '.tsx', 'jsx', '.js']
   },
   module: {
     rules: [
-      {
-        test: /\.tsx?$/,
-        use: {
-          loader: 'awesome-typescript-loader'
-        }
-      }
+      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
+      { test: /\.tsx?$/, loader: 'ts-loader' }
     ]
   }
 }

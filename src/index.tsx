@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from '@ui/App'
+
+import App from './app/infrastructure/ui/App'
 
 const rootNode = document.getElementById('root') ?? document.createElement('div')
 
