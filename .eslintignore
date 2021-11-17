@@ -2,7 +2,3 @@ build/
 dist/
 
 .eslintcache/
-
-# any file distinct of .{js,ts,jsx,tsx}
-**/*
-!*.{js,ts,jsx,tsx}

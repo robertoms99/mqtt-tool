@@ -37,6 +37,6 @@ export default (_: any, { mode }: any) => {
     case 'production':
       return merge(commonConfig, prodConfig)
     default:
-      throw new Error('No matching configuration was found!')
+      throw new Error('No matching configuration was found {development | production}!')
   }
 }
