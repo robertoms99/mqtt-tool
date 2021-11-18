@@ -11,5 +11,3 @@ if (!document.body.contains(rootNode)) {
 }
 
 render(<App />, rootNode)
-
-// coment

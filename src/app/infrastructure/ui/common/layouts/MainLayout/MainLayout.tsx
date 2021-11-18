@@ -1,8 +1,14 @@
 import React from 'react'
-import Style from './MainLayout.styles'
+import { ClientSidebar } from '../../components'
+import { Root, Container } from './MainLayout.styles'
 
 const MainLayout: React.FC = ({ children }) => {
-  return <Style.Root>{children}</Style.Root>
+  return (
+    <Root>
+      <ClientSidebar />
+      <Container>{children}</Container>
+    </Root>
+  )
 }
 
 export default MainLayout

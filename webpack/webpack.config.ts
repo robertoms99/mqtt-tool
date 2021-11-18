@@ -1,4 +1,5 @@
 import { Configuration } from 'webpack'
+import TsconfigPathsPlugin from 'tsconfig-paths-webpack-plugin'
 import { merge } from 'webpack-merge'
 import devConfig from './webpack.dev'
 import prodConfig from './webpack.prod'
@@ -13,6 +14,7 @@ const commonConfig: Configuration = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     }),
+    new TsconfigPathsPlugin() as any,
     new MiniCSSExtractPlugin()
   ],
   output: {
@@ -23,10 +25,7 @@ const commonConfig: Configuration = {
     extensions: ['.ts', '.tsx', 'jsx', '.js']
   },
   module: {
-    rules: [
-      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      { test: /\.tsx?$/, loader: 'ts-loader' }
-    ]
+    rules: [{ test: /\.tsx?$/, loader: 'ts-loader' }]
   }
 }
 
