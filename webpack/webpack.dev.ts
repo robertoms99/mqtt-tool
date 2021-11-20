@@ -4,9 +4,8 @@ const devConfig = {
   mode: 'development',
   devtool: 'source-map',
   devServer: {
-    historyApiFallback: true,
-    static: {
-      directory: path.resolve(__dirname, '../public')
+    historyApiFallback: {
+      index: path.resolve(__dirname, '../public/index.html')
     }
   }
 }

@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import IconStyle from '../../../Icon/Icon.style'
 
-export const Root = styled.button`
+export const Root = styled(Link)`
   width: 100%;
   display: flex;
   flex-direction: column;

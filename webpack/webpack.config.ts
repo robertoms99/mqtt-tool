@@ -19,6 +19,7 @@ const commonConfig: Configuration = {
   ],
   output: {
     path: path.resolve(__dirname, '../dist'),
+    publicPath: path.resolve(__dirname, '../public/index.html'),
     filename: 'js/bundle.[contenthash].js'
   },
   resolve: {

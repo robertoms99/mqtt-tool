@@ -10,7 +10,7 @@ const ClientSidebar = () => {
       <ul>
         {CLIENT_MOCK.map((client) => (
           <li key={client}>
-            <ClientButton>{client}</ClientButton>
+            <ClientButton client={client} />
           </li>
         ))}
       </ul>

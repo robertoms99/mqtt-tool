@@ -1,3 +1,5 @@
 export { default as Routes } from './Routes'
 export { default as Icon } from './Icon'
 export { default as ClientSidebar } from './ClientSidebar'
+export { default as ClientInformation } from './ClientInformation'
+export { default as Topic } from './Topic'
