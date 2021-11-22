@@ -7,9 +7,9 @@ export const Root = styled.main`
 `
 
 export const Container = styled.section`
-  background-color: red;
   flex-grow: 1;
   flex-shrink: 0;
+  border-left: 1px solid;
 `
 
 const MainLayoutStyles = {

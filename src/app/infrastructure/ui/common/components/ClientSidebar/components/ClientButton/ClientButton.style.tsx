@@ -8,7 +8,6 @@ export const Root = styled(Link)`
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  background-color: green;
   border: 1px solid;
 `
 
