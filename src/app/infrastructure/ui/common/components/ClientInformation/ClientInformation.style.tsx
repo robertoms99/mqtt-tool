@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const Root = styled.div`
   height: 100%;
+  border-right: 1px solid;
 `
 
 export const CreateTopicButton = styled.button`
@@ -19,6 +20,7 @@ export const EditLink = styled(Link)`
 
 export const ClientName = styled.h1`
   font-size: 1.7em;
+  margin-bottom: 0.6em;
 `
 
 export const ClientHeader = styled.header`

@@ -2,9 +2,11 @@ import { Link } from 'react-router-dom'
 import styled, { css } from 'styled-components'
 
 export const Root = styled.ul`
-  border: 1px solid;
   li {
     border: 1px solid;
+    :not(:last-child) {
+      border-bottom: none;
+    }
   }
 `
 

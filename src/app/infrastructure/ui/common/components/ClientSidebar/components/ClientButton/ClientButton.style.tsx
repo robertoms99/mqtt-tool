@@ -8,7 +8,7 @@ export const Root = styled(Link)`
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  border: 1px solid;
+  border-bottom: 1px solid;
 `
 
 export const Icon = styled(IconStyle.Root)`

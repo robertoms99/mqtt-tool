@@ -23,7 +23,7 @@ const ClientInformation: React.FC<ClientInformationFC> = ({ client }) => {
           <Icon icon={faPen} />
         </EditLink>
         <ClientName>CLIENT {client}</ClientName>
-        <em> mqtt://localhost:8080</em>
+        <span> mqtt://localhost:8080</span>
       </ClientHeader>
       <section>
         <CreateTopicButton>

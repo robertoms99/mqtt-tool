@@ -41,9 +41,12 @@ textarea {
   outline: none;
   border: none;
   background: none;
-  font-family: inherit;
   color: inherit;
-  font-size: 100%;
+  font: inherit;
+}
+a,
+button {
+  cursor: pointer;
 }
 `
 
