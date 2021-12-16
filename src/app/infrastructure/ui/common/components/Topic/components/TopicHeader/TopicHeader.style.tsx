@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Button from '../../../Button'
 
 export const Root = styled.header`
   display: flex;
@@ -7,9 +8,7 @@ export const Root = styled.header`
   border-bottom: 1px solid;
 `
 
-export const ButtonAction = styled.button`
-  padding: 1em 2em;
-  border-radius: 0.5rem;
+export const ButtonAction = styled(Button)`
   :not(:last-child) {
     margin-right: 1.5em;
   }
